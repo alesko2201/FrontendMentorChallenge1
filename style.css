@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 50px 0;
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 600px;
+  width: 400px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 20px;
+  height: 700px;
+  padding: 20px 20px 0 20px;
+}
+
+.img-container {
+  height: 55%;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.image {
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.text {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.text-title {
+  color: #fff;
+  font-size: 24px;
+}
+
+.attributes-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.coin {
+  color: hsl(178, 100%, 50%);
+}
+
+.days {
+  color: hsl(215, 51%, 70%);
+}
+
+.span-1,
+.span-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+}
+
+.days {
+  grid-area: text1;
+}
+
+.coin {
+  grid-area: text;
+}
+
+.coin-svg {
+  margin-right: 7px;
+  grid-area: logo;
+}
+
+.days-svg {
+  margin-right: 5px;
+  grid-area: logo1;
+}
+
+.information-container-1 {
+  display: grid;
+  height: 100%;
+  grid-template-areas: 'logo text';
+}
+
+.information-container-2 {
+  display: grid;
+  height: 100%;
+  grid-template-areas: 'logo1 text1';
+}
+
+.user-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  height: 100px;
+  width: 100%;
+  border-top: 1px solid hsl(215, 51%, 70%);
+}
+
+.user-image {
+  height: 45px;
+  width: 45px;
+}
+
+.user-text {
+  padding: 20px;
+  width: 100%;
+  color: hsl(215, 51%, 70%);
+  text-align: center;
+  margin: 0 auto;
+}
